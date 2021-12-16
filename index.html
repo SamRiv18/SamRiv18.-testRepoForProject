@@ -111,16 +111,14 @@ x <!DOCTYPE html>
                 >
               </li>
             </ul>
-            <!-- temporary search bar for google places api -->
-            <input id="enter_text" placeholder="Enter a place" type="text"/>
-
+            
             <!-- Deals with the search bar and the search button -->
-            <form class="d-flex">
+            <form id="submit-location" class="d-flex" >
               <input
                 id="enter_text"
                 class="form-control me-2"
                 type="search"
-                placeholder="Search"
+                placeholder="Enter a city"
                 aria-label="Search"
               />
               <button class="btn btn-primary" type="submit">Search</button>
@@ -256,6 +254,7 @@ x <!DOCTYPE html>
     <!-- Features -->
     <!-- loads map -->
     <div id="map"></div>
+    <div class="cardblock" id="geometry"></div>
     <!--  -->
     <section id="features">
       <div class="container-fluid">
@@ -341,7 +340,7 @@ x <!DOCTYPE html>
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgGkZtN3w9l6EmmjSgcGjvbPME4ILKP0w&libraries=places&callback=getAutocomplete" async defer>
     </script> -->
 <script 
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgGkZtN3w9l6EmmjSgcGjvbPME4ILKP0w&libraries=places&callback=initMap"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgGkZtN3w9l6EmmjSgcGjvbPME4ILKP0w&libraries=places&callback=initApi"
       async defer></script>
   </body>
   
